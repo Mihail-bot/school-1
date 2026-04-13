@@ -2,13 +2,14 @@ package ru.hogwarts.school.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 
 import java.util.Objects;
 
 @Entity
 public class Student {
 
-    @id
+    @Id
     @GeneratedValue
     private long id;
     private String name;
